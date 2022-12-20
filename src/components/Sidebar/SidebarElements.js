@@ -6,17 +6,17 @@ import { TbChristmasTree } from "react-icons/tb";
 
 export const SidebarContainer = styled.aside`
   position: fixed;
-  z-index: 999;
   width: 100vw;
   height: 100vh;
   background: #000;
   display: grid;
   align-items: center;
-  top: 0;
+  top: -100%;
   right: 0;
-  transition: 0.6s ease-in-out;
+  transition: 0.8s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  z-index: ${({ isOpen }) => (isOpen ? "999" : "0")};
 `;
 
 export const Icon = styled.div`
@@ -75,7 +75,7 @@ export const SidebarBtnWrap = styled.div`
   justify-content: center;
 `;
 
-export const SidebarRoute = styled(LinkR)`
+export const SidebarRoute = styled.div`
   border-radius: 50px;
   height: auto;
   white-space: nowrap;

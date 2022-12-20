@@ -76,11 +76,14 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SidebarMenu>
         <SidebarBtnWrap>
           <SidebarRoute to="qunote3.net">
-            <img
-              src={images.qunoteLogin}
-              style={{ width: "40px" }}
-              alt="Login"
-            />
+          <a
+                href="https://qunote3.net"
+                alt="Login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={images.qunoteLogin} alt="Login" />
+              </a>
           </SidebarRoute>
         </SidebarBtnWrap>
       </SidebarWrapper>

@@ -15,7 +15,7 @@ export const Nav = styled.nav`
   font-size: 1rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 999;
 
   @media screen and (max-width: 960) {
     transition: 0.8s all ease;
@@ -125,7 +125,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.div`
   border-radius: 10px;
   white-space: nowrap;
   padding: 10px 16px;
@@ -142,8 +142,10 @@ export const NavBtnLink = styled(LinkR)`
     height: auto;
   }
 
-  &:hover {
-    filter: brightness(94%);
+    a {
+      &:hover {
+      filter: brightness(94%);
+    }
   }
 `;
 

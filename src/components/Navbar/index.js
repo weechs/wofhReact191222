@@ -111,11 +111,15 @@ const Navbar = ({ toggle }) => {
           </NavMenu>
 
           <NavBtn>
-            <NavBtnLink
-              onClick={() => openInNewTab("https://qunote3.net")}
-              to=""
-            >
-              <img src={images.qunoteLogin} alt="Login" />
+          <NavBtnLink>
+              <a
+                href="https://qunote3.net"
+                alt="Login"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={images.qunoteLogin} alt="Login" />
+              </a>
             </NavBtnLink>
           </NavBtn>
         </NavbarContainer>
