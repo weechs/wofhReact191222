@@ -18,7 +18,6 @@ export const SidebarContainer = styled.aside`
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
   z-index: ${({ isOpen }) => (isOpen ? "999" : "0")};
 `;
-
 export const Icon = styled.div`
   position: absolute;
   top: 1.2rem;
@@ -80,7 +79,7 @@ export const SidebarRoute = styled.div`
   height: auto;
   white-space: nowrap;
   padding: 0;
-  margin: 44px 22px;
+  margin: 44px 8px;
   color: #000;
   font-size: 16px;
   outline: none;
@@ -90,7 +89,15 @@ export const SidebarRoute = styled.div`
   text-decoration: none;
 
   & img {
-    width: 80px;
+    width: 60px;
+  }
+
+  a {
+    &:hover {
+      filter: brightness(120%);
+      padding-bottom: 60px;
+      border-bottom: 2px solid var(--color-xmas);
+    }
   }
 
   /* &:hover {

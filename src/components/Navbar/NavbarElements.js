@@ -17,7 +17,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 998;
 
-  @media screen and (max-width: 960) {
+  @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
 `;
@@ -128,7 +128,7 @@ export const NavBtn = styled.nav`
 export const NavBtnLink = styled.div`
   border-radius: 10px;
   white-space: nowrap;
-  padding: 10px 16px;
+  padding: 5px 5px;
   color: #fff;
   font-size: 14px;
   outline: none;
@@ -142,9 +142,11 @@ export const NavBtnLink = styled.div`
     height: auto;
   }
 
-    a {
-      &:hover {
-      filter: brightness(94%);
+  a {
+    &:hover {
+      filter: brightness(120%);
+      padding-bottom: 30px;
+      border-bottom: 2px solid var(--color-xmas);
     }
   }
 `;

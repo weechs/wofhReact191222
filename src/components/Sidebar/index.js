@@ -26,8 +26,25 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarBtnWrap>
-          <SidebarRoute to="/">
-            <img src={images.wofhLogoWheel} alt="Login" />
+          <SidebarRoute>
+            <a
+              href="https://www.wheelofhealth.co.uk/login"
+              alt="Login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={images.wofhLogoWheel} alt="Associate Login" />
+            </a>
+          </SidebarRoute>
+          <SidebarRoute>
+            <a
+              href="https://qunote3.net"
+              alt="Login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={images.qunoteLogin} alt="Login" />
+            </a>
           </SidebarRoute>
         </SidebarBtnWrap>
         <SidebarMenu>
@@ -74,18 +91,6 @@ const Sidebar = ({ isOpen, toggle }) => {
             Enquiry
           </SidebarLink>
         </SidebarMenu>
-        <SidebarBtnWrap>
-          <SidebarRoute to="qunote3.net">
-          <a
-                href="https://qunote3.net"
-                alt="Login"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src={images.qunoteLogin} alt="Login" />
-              </a>
-          </SidebarRoute>
-        </SidebarBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>
   );

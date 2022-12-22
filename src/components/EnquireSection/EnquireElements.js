@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   height: auto;
   width: 100vw;
   max-width: 1100px;
-  padding: 150px 50px;
+  padding: 150px 25px;
   margin-right: auto;
   margin-left: auto;
   justify-content: center;
@@ -42,18 +42,30 @@ export const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 25px;
   grid-area: col1;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 25px;
   grid-area: col2;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 
 export const Column3 = styled.div`
   margin-bottom: 5px;
   padding: 0 15px;
   grid-area: col2;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+  }
 `;
 export const TextWrapper = styled.div`
   max-width: 540px;
